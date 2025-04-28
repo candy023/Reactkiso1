@@ -1,14 +1,26 @@
-import React from 'react';
-import "./ThreadList.css";
+import { useState, useEffect } from 'react';
 
 function ThreadList() {
+  const [threads, setThreads] = useState([]);
+  useEffect(() => {
+    const fetchThreads = async () => {
+      try {
+        const response = await fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=0');
+        const data = await response.json();
+        setThreads(data);
+      } catch (error) {
+        console.error('Error fetching threads:', error);
+      }
+    };
+    fetchThreads();
+  }, []);
   return (
-    <div className="thread-list">
+    <div>
       <h2>スレッド一覧</h2>
       <ul>
-        <li>任天堂スイッチ2</li>
-        <li>マインクラフトアプデについて</li>
-        <li>大谷翔平３号ホームラン</li>
+        {threads.map(thread => (
+          <li key={thread.id}>{thread.title}</li>
+        ))}
       </ul>
     </div>
   );

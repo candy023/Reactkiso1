@@ -5,13 +5,15 @@
   margin-left:320px;
   padding: 10px;
   color: rgba(61, 233, 84, 0.507);
-  text-align: center;
+  text-align: start;
+  margin-top: 6px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .main {
   background-color: #0e0d0d;
   width: 100%;
-  max-width: 800px; /* コンテンツの最大幅を制限 */
+  max-width: 600px; /* コンテンツの最大幅を制限 */
   padding: 0 20px; /* 左右に余白を追加 */
   margin: 0 auto; 
   min-height: 400px;
