@@ -1,21 +1,19 @@
 
-.header {
-  background-color: #282c34;
-  width: auto;
-  margin-left:320px;
-  padding: 10px;
-  color: rgba(61, 233, 84, 0.507);
-  text-align: start;
-  margin-top: 6px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+.title {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background-color: #161515;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
 }
 
 .main {
-  background-color: #0e0d0d;
-  width: 100%;
-  max-width: 600px; /* コンテンツの最大幅を制限 */
-  padding: 0 20px; /* 左右に余白を追加 */
-  margin: 0 auto; 
-  min-height: 400px;
-  margin-left:130px;
+  color: #4caf50;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
 }
