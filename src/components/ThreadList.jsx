@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
+import './ThreadList.css'; // CSSファイルをインポート
 
 function ThreadList() {
   const [threads, setThreads] = useState([]);
+  
   useEffect(() => {
     const fetchThreads = async () => {
       try {
@@ -12,14 +14,18 @@ function ThreadList() {
         console.error('Error fetching threads:', error);
       }
     };
+    
     fetchThreads();
   }, []);
+
   return (
-    <div>
-      <h2>スレッド一覧</h2>
-      <ul>
+    <div className="box">
+      <h2 className="title">スレッド一覧</h2>
+      <ul className="list">
         {threads.map(thread => (
-          <li key={thread.id}>{thread.title}</li>
+          <li key={thread.id} className="item">
+            {thread.title}
+          </li>
         ))}
       </ul>
     </div>

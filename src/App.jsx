@@ -1,18 +1,12 @@
 import { useState } from 'react';
-import ThreadList from './components/ThreadList';
 import './App.css';
+import ThreadList from './components/ThreadList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="header">
-        <h1>掲示板アプリ</h1>
-      </header>
-      
-      <main className="main">
-        <ThreadList />
-      </main>
-
+    <div className="title">
+      <h1 className="main">掲示板アプリ</h1>
+      <ThreadList />
     </div>
   );
 }
