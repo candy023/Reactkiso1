@@ -1,19 +1,20 @@
 
-.title {
-  width: 100%;
-  min-height: 100vh;
+.App {
   text-align: center;
-  padding: 20px;
-  background-color: #161515;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center;
+  background-color: #2b1d28; /* ダークブルーの背景 */
+  min-height: 100vh;
+  padding: 50px;
+  color: #06ff59ee; 
+  margin-left: 300px;
+  margin-right: 0;
 }
 
-.main {
-  color: #4caf50;
-  margin-bottom: 30px;
-  font-size: 2.5rem;
+h1 {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  font-size: 4rem;
+  color: #ffffff;
+  background-color: #2d98d6;
+
+
 }
