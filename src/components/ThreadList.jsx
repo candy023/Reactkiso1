@@ -14,16 +14,14 @@ function ThreadList() {
         console.error('Error fetching threads:', error);
       }
     };
-    
     fetchThreads();
   }, []);
-
   return (
     <div className="box">
-      <h2 className="title">スレッド一覧</h2>
+      <h2>スレッド一覧</h2>
       <ul className="list">
         {threads.map(thread => (
-          <li key={thread.id} className="item">
+          <li key={thread.id}>
             {thread.title}
           </li>
         ))}
